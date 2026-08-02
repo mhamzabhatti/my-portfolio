@@ -18,11 +18,7 @@ function Portfolio() {
       date: 'Jul 3, 2025',
       desc: 'Understood AI product thinking and practical adoption strategy.',
       credential: 'JUUBTLVTS36L',
-<<<<<<< HEAD
       image: '/certifications/crash-course-on-python.png'
-=======
-      image: '/certifications/ai-for-everyone.png'
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
     },
     {
       title: 'AI Python for Beginners',
@@ -38,11 +34,7 @@ function Portfolio() {
       date: 'Jul 19, 2025',
       desc: 'Practiced automation scripts and production-oriented coding habits.',
       credential: '9JQ4FC0COLM',
-<<<<<<< HEAD
       image: '/certifications/ai-for-everyone.png'
-=======
-      image: '/certifications/crash-course-on-python.png'
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
     },
     {
       title: 'Python for Data Analysis: Pandas & NumPy',
@@ -53,7 +45,7 @@ function Portfolio() {
       image: '/certifications/python-data-analysis.png'
     }
   ];
-  
+
   const projects = [
     {
       title: 'AI Doctor Recommendation',
@@ -70,7 +62,6 @@ function Portfolio() {
       image: '/projects/jarvis-assistant.png'
     },
     {
-<<<<<<< HEAD
       title: 'FizzPop',
       desc: 'Modern soda brand ordering website with flavor selection, dark-themed UI, and smooth interactive ordering flow.',
       stack: 'HTML, CSS, JavaScript, Responsive Design',
@@ -90,15 +81,6 @@ function Portfolio() {
       stack: 'Python, Data Visualization, Simulation, 3D Rendering',
       impact: 'Developed an interactive urban planning tool with real-time statistics, risk analysis, and multi-layer city views.',
       image: '/projects/citymind-management-os.png'
-    },
-    {
-=======
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
-      title: 'Student Registration System',
-      desc: 'Desktop app with Tkinter and CustomTkinter for streamlined student workflows.',
-      stack: 'Python, Tkinter, CustomTkinter',
-      impact: 'Enabled faster student record operations through an intuitive GUI.',
-      image: '/projects/student-registration-system.png'
     },
     {
       title: 'Community Healthcare Hub',
@@ -121,14 +103,13 @@ function Portfolio() {
       impact: 'Implemented state-driven gameplay logic and polished sprite interactions.',
       image: '/projects/buzz-bomber-game.png'
     },
-        
     {
-  title: 'Super Mario (x86 Assembly)',
-  desc: 'Low-level implementation of a classic side-scrolling platformer using x86 Assembly, focusing on direct hardware interaction and memory control.',
-  stack: 'x86 Assembly, NASM/MASM, VGA Graphics, Interrupts',
-  impact: 'Demonstrated deep understanding of low-level programming, game loops, sprite rendering, and keyboard input handling without high-level abstractions.',
-  image: '/projects/super-mario-assembly.png'
-}
+      title: 'Super Mario (x86 Assembly)',
+      desc: 'Low-level implementation of a classic side-scrolling platformer using x86 Assembly, focusing on direct hardware interaction and memory control.',
+      stack: 'x86 Assembly, NASM/MASM, VGA Graphics, Interrupts',
+      impact: 'Demonstrated deep understanding of low-level programming, game loops, sprite rendering, and keyboard input handling without high-level abstractions.',
+      image: '/projects/super-mario-assembly.png'
+    }
   ];
 
   const skills = [
@@ -146,21 +127,12 @@ function Portfolio() {
     'Data Cleaning',
     'Prompt Engineering',
     'UI Engineering'
-
   ];
 
   const stats = [
-<<<<<<< HEAD
     { value: '15+', label: 'Completed Projects' },
-=======
-    { value: '12+', label: 'Completed Projects' },
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
-    { value: '5+', label: 'Professional Certifications' },
-    { value: '4+', label: 'Core Technical Domains' },
-    { value: '14+', label: 'Production-Ready Skills' },
   ];
 
-<<<<<<< HEAD
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 }
@@ -199,8 +171,6 @@ function Portfolio() {
     }
   };
 
-=======
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
   return (
     <div className="portfolio-shell">
       <div className="neon-orb neon-orb-cyan" />
@@ -209,7 +179,6 @@ function Portfolio() {
       <main className="portfolio-content">
         <motion.section
           className="hero"
-<<<<<<< HEAD
           initial={{ opacity: 0, y: 30, scale: 0.97 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -222,6 +191,7 @@ function Portfolio() {
           >
             • Computer Scientist • Software Engineer • AI Builder • FAST NUCES
           </motion.div>
+
           <motion.h1
             className="hero-title"
             initial={{ opacity: 0, y: 20 }}
@@ -230,6 +200,7 @@ function Portfolio() {
           >
             Muhammad Hamza Bhatti
           </motion.h1>
+
           <motion.p
             className="hero-subtitle"
             initial={{ opacity: 0, y: 15 }}
@@ -245,19 +216,6 @@ function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
-=======
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="eyebrow">• Computer Scientist • Software Engineer • AI Builder • FAST NUCES</div>
-          <h1 className="hero-title">Muhammad Hamza Bhatti</h1>
-          <p className="hero-subtitle">
-            Building robust software, immersive games, and intelligent systems with a product mindset.
-          </p>
-
-          <div className="hero-cta-row">
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
             <a
               className="btn btn-primary"
               href="https://www.linkedin.com/in/muhammad-hamza-bhatti-5b9913303/recent-activity/all/"
@@ -266,7 +224,6 @@ function Portfolio() {
             >
               Connect on LinkedIn
             </a>
-<<<<<<< HEAD
           </motion.div>
         </motion.section>
 
@@ -357,59 +314,14 @@ function Portfolio() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.05 }}
           >
-=======
-          </div>
-        </motion.section>
-
-        <section className="stats-grid">
-          {stats.map(function(stat) {
-            return (
-              <article key={stat.label} className="card glow-border">
-                <h2 className="stat-value">{stat.value}</h2>
-                <p className="muted-text">{stat.label}</p>
-              </article>
-            );
-          })}
-        </section>
-
-        <section className="split-layout">
-          <article className="card about-card glow-border">
-            <h2>About</h2>
-            <p>
-              I am currently a 4th semester Computer Science student at FAST NUCES Islamabad, focused on modern web apps, AI-driven products, and performance-oriented systems.
-              I enjoy turning complex technical ideas into usable products that look sharp and scale well.
-            </p>
-          </article>
-
-          <article className="card skills-card glow-border">
-            <h2>Core Skills</h2>
-            <div className="chip-wrap">
-              {skills.map(function(skill) {
-                return <span key={skill} className="skill-chip">{skill}</span>;
-              })}
-            </div>
-          </article>
-        </section>
-
-        <section className="section-block">
-          <div className="section-head">
-            <h2>Featured Projects</h2>
-          </div>
-          <div className="project-grid">
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
             {projects.map(function(project) {
               return (
                 <motion.article
                   key={project.title}
                   className="card project-card glow-border"
-<<<<<<< HEAD
                   variants={fadeUp}
                   whileHover={{ y: -6, scale: 1.02 }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-=======
-                  whileHover={{ y: -6, scale: 1.01 }}
-                  transition={{ duration: 0.24 }}
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
                 >
                   <div className="project-image-wrap">
                     <img className="project-image" src={project.image} alt={project.title} loading="lazy" />
@@ -423,7 +335,6 @@ function Portfolio() {
                 </motion.article>
               );
             })}
-<<<<<<< HEAD
           </motion.div>
         </motion.section>
 
@@ -445,29 +356,14 @@ function Portfolio() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-=======
-          </div>
-        </section>
-
-        <section className="section-block">
-          <div className="section-head">
-            <h2>Certifications</h2>
-          </div>
-          <div className="cert-grid">
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
             {certifications.map(function(cert) {
               return (
                 <motion.article
                   key={cert.title}
                   className="card cert-card glow-border"
-<<<<<<< HEAD
                   variants={fadeUp}
                   whileHover={{ y: -5, scale: 1.015 }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-=======
-                  whileHover={{ y: -5 }}
-                  transition={{ duration: 0.2 }}
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
                 >
                   <div className="cert-image-wrap">
                     <div className="cert-image" style={{ backgroundImage: `url(${cert.image})` }}>
@@ -483,7 +379,6 @@ function Portfolio() {
                 </motion.article>
               );
             })}
-<<<<<<< HEAD
           </motion.div>
         </motion.section>
 
@@ -508,20 +403,6 @@ function Portfolio() {
           <span>Made by Muhammad Hamza Bhatti</span>
           <span>mhb786.tech@gmail.com</span>
         </motion.footer>
-=======
-          </div>
-        </section>
-
-        <section className="cta-band glow-border">
-          <h2>Let us build something exceptional</h2>
-          <p className="muted-text">Available for internships, freelance work, and high-impact collaborations.</p>
-        </section>
-
-        <footer className="footer">
-          <span>Made by Muhammad Hamza Bhatti</span>
-          <span>mhb786.tech@gmail.com</span>
-        </footer>
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
       </main>
     </div>
   );

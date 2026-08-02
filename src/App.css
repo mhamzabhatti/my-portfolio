@@ -209,9 +209,8 @@
   font-size: 0.85rem;
   color: #c6f8ff;
   background: rgba(0, 236, 255, 0.08);
-<<<<<<< HEAD
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-  cursor: default;
+transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+cursor: default;
 }
 
 .skill-chip:hover {
@@ -219,8 +218,6 @@
   border-color: rgba(0, 236, 255, 0.6);
   box-shadow: 0 0 12px rgba(0, 236, 255, 0.25);
   transform: translateY(-2px);
-=======
->>>>>>> cc11edce303ac401a6d1b1f6e0986f04146525a3
 }
 
 .project-card h3,
