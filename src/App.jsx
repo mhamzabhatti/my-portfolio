@@ -129,9 +129,12 @@ function Portfolio() {
     'UI Engineering'
   ];
 
-  const stats = [
-    { value: '15+', label: 'Completed Projects' },
-  ];
+const stats = [
+  { value: '15+', label: 'Completed Projects' },
+  { value: '5', label: 'Certifications Earned' },
+  { value: '14+', label: 'Tech Skills' },
+  { value: '3+', label: 'Languages & Frameworks Mastered' },
+];
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
