@@ -48,6 +48,13 @@ function Portfolio() {
 
   const projects = [
     {
+      title: 'n8n Text to Image Generation',
+      desc: 'AI workflow that turns chat prompts into images using a self-hosted n8n pipeline.',
+      stack: 'n8n (Self-Hosted), HTTP Request Nodes, OpenRouter, Hugging Face Inference Router, FLUX.1-schnell (via fal-ai), REST APIs',
+      impact: 'Built an end-to-end prompt-to-image pipeline with OpenRouter and FLUX.1-schnell.',
+      image: '/projects/n8n-text-to-image.png'
+    },
+    {
       title: 'AI Doctor Recommendation',
       desc: 'Smart medical recommendation concept powered by AI decision logic.',
       stack: 'Python, AI Models, Data Processing',
@@ -109,6 +116,30 @@ function Portfolio() {
       stack: 'x86 Assembly, NASM/MASM, VGA Graphics, Interrupts',
       impact: 'Demonstrated deep understanding of low-level programming, game loops, sprite rendering, and keyboard input handling without high-level abstractions.',
       image: '/projects/super-mario-assembly.png'
+    }
+  ];
+
+  const experiences = [
+    {
+      title: 'KDD Lab FAST NUCES',
+      org: 'Knowledge Discovery & Data Science Lab',
+      domain: 'Digital Image Processing',
+      duration: '6 Weeks',
+      image: '/experiences/kdd-lab-fast-nuces.png'
+    },
+    {
+      title: 'Arch Technologies',
+      org: "Pakistan's Digital AI Training Platform",
+      domain: 'Python Developer',
+      duration: '8 Weeks',
+      image: '/experiences/arch-technologies.png'
+    },
+    {
+      title: 'Software Productivity Strategists',
+      org: 'NSTP',
+      domain: 'Frontend Web Development',
+      duration: '4 Weeks',
+      image: '/experiences/sps-nstp.png'
     }
   ];
 
@@ -334,6 +365,49 @@ const stats = [
                     <p className="muted-text">{project.desc}</p>
                     <p className="detail-line"><span>Stack:</span> {project.stack}</p>
                     <p className="detail-line"><span>Impact:</span> {project.impact}</p>
+                  </div>
+                </motion.article>
+              );
+            })}
+          </motion.div>
+        </motion.section>
+
+        <motion.section
+          className="section-block"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeUp}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="section-head">
+            <h2>Experience</h2>
+          </div>
+          <motion.div
+            className="cert-grid"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            {experiences.map(function(exp) {
+              return (
+                <motion.article
+                  key={exp.title}
+                  className="card cert-card glow-border"
+                  variants={fadeUp}
+                  whileHover={{ y: -5, scale: 1.015 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                >
+                  <div className="exp-image-wrap">
+                    <img className="exp-image" src={exp.image} alt={exp.title} loading="lazy" />
+                    <span className="cert-badge">Experience</span>
+                  </div>
+                  <h3>{exp.title}</h3>
+                  <p className="cert-org">{exp.org}</p>
+                  <p className="muted-text">{exp.domain}</p>
+                  <div className="cert-meta">
+                    <span>{exp.duration}</span>
                   </div>
                 </motion.article>
               );
