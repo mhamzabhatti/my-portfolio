@@ -48,6 +48,13 @@ function Portfolio() {
 
   const projects = [
     {
+      title: 'AI Resume Analyzer & Career Assistant',
+      desc: 'AI-powered system that analyzes resumes against job descriptions, generates ATS scores, and delivers professional career reports via email.',
+      stack: 'n8n, OpenRouter, NVIDIA Nemotron 3 Super 120B, JavaScript, PDF Processing, HTML/CSS, Gmail',
+      impact: 'Automated end-to-end resume screening with ATS scoring, skill gap analysis, and personalized career feedback for candidates and recruiters.',
+      image: '/projects/ai-resume-analyzer.jpg'
+    },
+    {
       title: 'n8n Text to Image Generation',
       desc: 'AI workflow that turns chat prompts into images using a self-hosted n8n pipeline.',
       stack: 'n8n (Self-Hosted), HTTP Request Nodes, OpenRouter, Hugging Face Inference Router, FLUX.1-schnell (via fal-ai), REST APIs',
@@ -161,7 +168,7 @@ function Portfolio() {
   ];
 
 const stats = [
-  { value: '15+', label: 'Completed Projects' },
+  { value: '16+', label: 'Completed Projects' },
   { value: '5', label: 'Certifications Earned' },
   { value: '14+', label: 'Tech Skills' },
   { value: '3+', label: 'Languages & Frameworks Mastered' },
