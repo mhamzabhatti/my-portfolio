@@ -151,10 +151,13 @@ function Portfolio() {
   ];
 
   const skills = [
+    'n8n',
+    'Automation',
+    'AI Agents',
     'Python',
+    'Machine Learning',
     'C++',
     'Java',
-    'Machine Learning',
     'Tkinter',
     'CustomTkinter',
     'React',
@@ -167,12 +170,12 @@ function Portfolio() {
     'UI Engineering'
   ];
 
-const stats = [
-  { value: '16+', label: 'Completed Projects' },
-  { value: '5', label: 'Certifications Earned' },
-  { value: '14+', label: 'Tech Skills' },
-  { value: '3+', label: 'Languages & Frameworks Mastered' },
-];
+  const stats = [
+    { value: '16+', label: 'Completed Projects' },
+    { value: '5', label: 'Certifications Earned' },
+    { value: '17+', label: 'Tech Skills' },
+    { value: '5+', label: 'Languages & Frameworks Mastered' },
+  ];
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -275,7 +278,7 @@ const stats = [
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          {stats.map(function(stat) {
+          {stats.map(function (stat) {
             return (
               <motion.article
                 key={stat.label}
@@ -303,8 +306,7 @@ const stats = [
           >
             <h2>About</h2>
             <p>
-              I am currently in my 5th semester of a Computer Science degree at FAST NUCES Islamabad, focused on modern web apps, AI-driven products, and performance-oriented systems.
-              I enjoy turning ideas into usable products that look sharp and scale well.
+              I am currently in my 5th semester of a Computer Science degree at FAST NUCES Islamabad, focused on modern web apps, AI-driven products, and performance-oriented systems. I enjoy turning ideas into usable products that look sharp and scale well. Through rigorous coursework and hands-on projects, I have developed a strong foundation in full-stack development and intelligent systems. I am always eager to adopt emerging technologies and deliver impactful digital experiences that solve real-world problems.
             </p>
           </motion.article>
 
@@ -321,7 +323,7 @@ const stats = [
               whileInView="visible"
               viewport={{ once: true }}
             >
-              {skills.map(function(skill) {
+              {skills.map(function (skill) {
                 return (
                   <motion.span
                     key={skill}
@@ -355,7 +357,7 @@ const stats = [
             whileInView="visible"
             viewport={{ once: true, amount: 0.05 }}
           >
-            {projects.map(function(project) {
+            {projects.map(function (project) {
               return (
                 <motion.article
                   key={project.title}
@@ -397,7 +399,7 @@ const stats = [
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            {experiences.map(function(exp) {
+            {experiences.map(function (exp) {
               return (
                 <motion.article
                   key={exp.title}
@@ -440,7 +442,7 @@ const stats = [
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            {certifications.map(function(cert) {
+            {certifications.map(function (cert) {
               return (
                 <motion.article
                   key={cert.title}
